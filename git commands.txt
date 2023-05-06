@@ -1,0 +1,9 @@
+create a git repo on git 
+https://github.com/rishi-sap-dev/simplebootrest
+ - > invited rishi-dev
+
+git init
+git commit -m "first commit"
+git branch -M master
+git remote add origin https://github.com/rishi-sap-dev/simplebootrest.git
+git push -u origin master
