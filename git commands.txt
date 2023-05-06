@@ -1,3 +1,6 @@
+https://www.youtube.com/watch?v=NppkHKvnrqc
+
+
 create a git repo on git 
 https://github.com/rishi-sap-dev/simplebootrest
  - > invited rishi-dev
@@ -25,11 +28,29 @@ this will trigger a build
 do a git pull to get yml file 
 ---------------------------------
 add the final jar name in pom file also , create a docker image with same name 
+<finalName>springboot-image-nodb</finalName>
 springboot-image-nodb
 ------------------------------------------
 modify yaml and add docker file , also add username and password to github secrets 
+------------------------------------------
 
- 
+commit and this will create an image 
+
+docker pull rrishidev/springboot-image-nodb:latest
+docker run -p 8080:8080  rrishidev/springboot-image-nodb:latest
+
+docker stop baae82f83ac0d946a57585fdc0671269ba9df948ceb39fb9c7498e6c9d3ee63b
+
+and then run all : 
+http://localhost:8080/books
+
+
+
+
+Helpfull links:
+https://github.com/actions/setup-java
+https://stackoverflow.com/questions/69525199/openjdk-java-17-docker-image
+https://github.com/marketplace/actions/docker-build-push-action
 
 
 
