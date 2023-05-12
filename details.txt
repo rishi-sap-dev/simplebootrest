@@ -40,3 +40,44 @@ response:
     "title": "Learn Docker changed",
     "author": "Sunny changed"
 }
+
+-------------------------------
+Oracle db : 
+http://localhost:8080/dbbooks
+
+http://localhost:8080/dbbook/3
+{
+  "id": 3,
+  "title": "Learn Java again",
+  "author": "Stranger New"
+}
+
+Post:
+http://localhost:8080/dbbooks
+{
+    "title": "Python",
+    "author": "sunny"
+}
+Response:200
+{
+    "id": 4,
+    "title": "Python",
+    "author": "sunny"
+}
+
+Update:200
+http://localhost:8080/dbbook/4
+{
+    "title": "Python changed",
+    "author": "sunny- rishi"
+}
+response:
+{
+    "id": 4,
+    "title": "Python changed",
+    "author": "sunny- rishi"
+}
+
+delete:
+http://localhost:8080/dbbook/4
+(204)

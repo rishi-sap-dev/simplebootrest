@@ -12,10 +12,10 @@ public class BookService {
 
 	private static List<Book> books = new ArrayList<Book>();
 	static {
-		books.add(new Book(100, "Learn Java", "Rishabh"));
+	    books.add(new Book(100, "Learn Java", "Rishabh"));
 		books.add(new Book(200, "Learn Javascript", "Rishi"));
 		books.add(new Book(300, "Learn Docker", "Sunny"));
-		books.add(new Book(400, "Learn React", "Rish"));
+	    books.add(new Book(400, "Learn React", "Rish"));
 	}
 
 	public List<Book> getBooks() {
